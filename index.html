@@ -11,16 +11,74 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
 
   <body>
     <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar mt-3 align-items-center">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="order-first">Left iteam</div>
+        <!-- logo for nav -->
+        <a class="navbar-brand" href="#">
+          <img class="mb-1" src="./assest/images/logo.png" alt="flone-logo" />
+        </a>
+
+        <!-- left side items in navbar -->
+        <div class="order-first">
+          <ul class="navbar-nav flex-row gap-3">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">Bengali</a></li>
+              </ul>
+            </li>
+            <li class="nav-item text-muted pt-2">|</li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Eur
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">BDT</a></li>
+                <li><a class="dropdown-item" href="#">SGD</a></li>
+              </ul>
+            </li>
+            <li class="nav-item text-muted pt-2">|</li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Call Us 3965410 </a>
+            </li>
+          </ul>
+        </div>
+        <!-- right side items in navbar -->
         <div>
           <ul class="navbar-nav flex-row gap-3">
             <li class="nav-item">
@@ -53,5 +111,10 @@
       </div>
     </nav>
     <!-- navbar -->
+    <!-- horizontal line -->
+    <div class="container">
+      <hr />
+    </div>
+    <!-- hr line end -->
   </body>
 </html>
