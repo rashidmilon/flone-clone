@@ -28,8 +28,8 @@
   </head>
 
   <body>
-    <!-- navbar -->
-    <nav class="navbar mt-3 align-items-center">
+    <!-- Top navbar -->
+    <nav class="navbar mt-3">
       <div class="container">
         <!-- logo for nav -->
         <a class="navbar-brand" href="#">
@@ -39,37 +39,23 @@
         <!-- left side items in navbar -->
         <div class="order-first">
           <ul class="navbar-nav flex-row gap-3">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                English
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
-                <li><a class="dropdown-item" href="#">Bengali</a></li>
+            <li class="nav-item nav-link custom-dropdown">
+              English <span> <i class="fa-solid fa-angle-down"></i></span>
+              <ul class="dropdown-menu nav-link">
+                <li class="nav-item nav-link">English</li>
+                <li class="nav-item nav-link">Arabic</li>
+                <li class="nav-item nav-link">Bengali</li>
               </ul>
             </li>
+
             <li class="nav-item text-muted pt-2">|</li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Eur
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">EUR</a></li>
-                <li><a class="dropdown-item" href="#">BDT</a></li>
-                <li><a class="dropdown-item" href="#">SGD</a></li>
+
+            <li class="nav-item nav-link custom-dropdown">
+              EUR <span> <i class="fa-solid fa-angle-down"></i></span>
+              <ul class="dropdown-menu nav-link">
+                <li class="nav-item nav-link">EUR</li>
+                <li class="nav-item nav-link">SGD</li>
+                <li class="nav-item nav-link">BDT</li>
               </ul>
             </li>
             <li class="nav-item text-muted pt-2">|</li>
@@ -83,27 +69,35 @@
           <ul class="navbar-nav flex-row gap-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                <span><i class="fa-solid fa-magnifying-glass"></i></span
+                <span class="nav-icon"
+                  ><i class="fa-solid fa-magnifying-glass"></i></span
               ></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"
-                ><span><i class="fa-solid fa-circle-user"></i></span
+                ><span class="nav-icon"
+                  ><i class="fa-solid fa-circle-user"></i></span
               ></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span> <i class="fa-solid fa-shuffle"></i></span>
+                <span class="nav-icon">
+                  <i class="fa-solid fa-shuffle"></i
+                ></span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span> <i class="fa-regular fa-heart"></i></span>
+                <span class="nav-icon">
+                  <i class="fa-regular fa-heart"></i
+                ></span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span> <i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="nav-icon">
+                  <i class="fa-solid fa-bag-shopping"></i
+                ></span>
               </a>
             </li>
           </ul>
@@ -116,5 +110,58 @@
       <hr />
     </div>
     <!-- hr line end -->
+    <!-- Secondary Nav bar -->
+    <nav>
+      <div class="container">
+        <div class="row offset-3 col-6">
+          <div class="col">
+            <div>
+              <ul class="navbar-nav flex-row gap-4">
+                <li class="nav-item nav-link custom-dropdown">
+                  Home <span> <i class="fa-solid fa-angle-down"></i></span>
+
+                  <ul class="dropdown-menu nav-link">
+                    <li class="nav-item nav-link">
+                      Lorem
+                      <ul class="dropdown-menu nav-link">
+                        <li class="nav-item nav-link">
+                          Lorem
+                          <ul class="dropdown-menu nav-link">
+                            <li class="nav-item nav-link">Lorem</li>
+                            <li class="nav-item nav-link">Lorem</li>
+                            <li class="nav-item nav-link">Lorem</li>
+                          </ul>
+                        </li>
+                        <li class="nav-item nav-link">Lorem</li>
+                        <li class="nav-item nav-link">Lorem</li>
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-link">Lorem</li>
+                    <li class="nav-item nav-link">Lorem</li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Collection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Secondary Nav bar -->
   </body>
 </html>
