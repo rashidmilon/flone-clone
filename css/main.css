@@ -11864,10 +11864,13 @@ textarea.form-control-lg {
   position: relative;
   cursor: pointer;
   top: 1px;
+  background-color: #fff;
+  color: #555252;
 }
 
 .custom-dropdown:hover ul {
   background-color: #fff;
+  color: #0d6efd;
   min-width: 100px;
   display: block;
   position: absolute;
@@ -11878,6 +11881,7 @@ textarea.form-control-lg {
   margin-top: 0.5rem;
   border-radius: 0.15rem;
   box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
+  transform: all 3.5s ease 0s;
 }
 
 .custom-dropdown ul {
